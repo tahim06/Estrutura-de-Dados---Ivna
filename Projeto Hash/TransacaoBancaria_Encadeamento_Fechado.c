@@ -30,7 +30,7 @@ Transacao* criar_transacao(int id, float valor, const char* data, const char* de
     return nova_transacao;
 }
 
-// Função para inserir uma transação na tabela hash com encadeamento
+// Função para inserir uma transação na tabela hash com Encadeamento Fechado
 void inserir_transacao_encadeado(Transacao* tabela[], int id, float valor, const char* data, const char* descricao) {
     int index = hash(id);
     Transacao* nova_transacao = criar_transacao(id, valor, data, descricao);
